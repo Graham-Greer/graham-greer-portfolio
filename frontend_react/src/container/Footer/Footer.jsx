@@ -42,7 +42,7 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card ">
           <img src={images.email} alt="email" />
-          <a href="mailto:grahamgreer.pt@gmail.com" className="p-text">grahamgreer.pt@gmail.com</a>
+          <a href="mailto:grahamgreer.pt@gmail.com" className="p-text">contact@grahamgreer.co.uk</a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="phone" />
@@ -52,14 +52,15 @@ const Footer = () => {
       {!isFormSubmitted ? (
         <div className="app__footer-form app__flex">
           <div className="app__flex">
-            <input className="p-text" type="text" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
+            <input className="p-text" type="text" required="true" placeholder="Your Name" name="username" value={username} onChange={handleChangeInput} />
           </div>
           <div className="app__flex">
-            <input className="p-text" type="email" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
+            <input className="p-text" type="email" required="true" placeholder="Your Email" name="email" value={email} onChange={handleChangeInput} />
           </div>
           <div>
             <textarea
               className="p-text"
+              required="true"
               placeholder="Your Message"
               value={message}
               name="message"
