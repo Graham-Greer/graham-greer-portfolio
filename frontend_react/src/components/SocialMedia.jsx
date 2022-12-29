@@ -15,7 +15,7 @@ const SocialMedia = () => (
       </a>
     </div>
     <div>
-      <a href={`mailto: contact@grahamgreer.co.uk`}>
+      <a href={`mailto: grahamgreer.pt@gmail.com`}>
         <MdEmail />
       </a>
     </div>
